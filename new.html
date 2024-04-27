@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment NO.2</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            box-sizing: border-box;
+            gap: 5px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 15%;
+            background: #ffecce;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .pageBody {
+            width: 100%;
+            height: 85%;
+            padding-top: 10px;
+            background: #ffecce;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .image {
+            height: 200px;
+            width: 300px;
+            background: #2dce98;
+            background-image: url("https://img.freepik.com/free-vector/flat-people-taking-photos-with-smartphone_23-2149014895.jpg?w=740&t=st=1714228134~exp=1714228734~hmac=ff90264d7ca64ef4fa4c958da0d02419582682b8a7f50fcdca47a56be1b6a71e");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .message {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+            width: 100%;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 style="margin: 0">Hello There</h1>
+                <h2 style="margin: 0">My Name is Ahmed Omar</h2>
+            </div>
+            <div class="pageBody">
+                <div class="image"></div>
+                <form action="/thank-you.html" class="form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            required
+                            minlength="5"
+                            maxlength="20"
+                            placeholder="Enter Your Name Here"
+                        />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            required
+                            placeholder="Enter Your Email Here"
+                        />
+                    </div>
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <div style="width: 400px; height: 100px">
+                            <textarea
+                                namemessage
+                                id="message"
+                                cols="50"
+                                rows="4"
+                                style="
+                                    width: 300px;
+                                    height: 100px;
+                                    max-height: 100px;
+                                    max-width: 100%;
+                                "
+                            ></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="reset" value="Reset" />
+                        <input type="submit" value="Submit" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
